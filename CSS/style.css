@@ -1,0 +1,525 @@
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/******メインビジュアル******/
+
+
+
+.hero-image {
+    position: relative;
+}
+
+.fade{
+    animation: fadeIn 3s ease 0.2s 1 normal;
+}
+@keyframes fadeIn { 
+    0% {opacity: 0} 
+    100% {opacity: 1} 
+}
+
+
+.hero-image__text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    font-size: 3.0rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "Hannari";
+}
+
+.hero-image__text2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-family: "Hannari";
+}
+
+/******メイン******/
+
+.wrapper {
+    max-width: 1365px;
+    margin: auto;
+}
+
+.header {
+    background-color: #FFFFFF;
+}
+
+.header-wrapper {
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #EFEFEF;
+    background-color: #FFFFFF
+}
+
+.nav-list {
+    font-family: 'Otomanopee One', sans-serif;
+    display: flex;
+    margin-right: 112px;
+
+}
+
+.nav-item {
+    margin-left: 32px;
+    
+}
+
+.nav-item>a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav-item.hover:hover{
+	color: yellow;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+/******アバウト******/
+
+.spin{
+    transition: transform 0.5s ease 0s;
+  }
+  .spin:hover{
+    transform:rotate(360deg);
+  }
+
+
+.cheese {
+    margin: 100px 0 0 0;
+}
+
+.about-heading {
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 24px;
+    margin: 80x 0 0;
+    color:#FFD61A
+}
+
+.about-texts {
+    font-size: 16px;
+    font-family: "Hannari";
+}
+
+.about-text1 {
+    line-height: 50px;
+    margin: 24px 0 64px;
+}
+
+.about-text2 {
+    margin: 0 0 50px;
+}
+
+.about-text4 {
+    margin: 0 0 50px;
+}
+
+.about-text5 {
+    margin: 0 0 50px;
+}
+
+.about-text7 {
+    margin: 0 0 80px;
+}
+
+.fwari{
+    animation:fwari ease-in-out 1s infinite alternate;
+    -webkit-animation:fwari ease-in-out 1s infinite alternate;
+    -moz-animation:fwari ease-in-out 1s infinite alternate;
+  }
+  @keyframes fwari{
+    0%   { transform:translate(0%, 0%); }
+    100% { transform:translate(0%, -30px); }
+  }
+  @-webkit-keyframes fwari{
+    0%   { -webkit-transform:translate(0%, 0%); }
+    100% { -webkit-transform:translate(0%, -30px); }
+  }
+  
+  @-moz-keyframes fwari{
+    0%   { -moz-transform:translate(0%, 0%); }
+    100% { -moz-transform:translate(0%, -30px); }
+  }
+
+/******写真４枚******/
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+  }
+  
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  } 
+
+
+.inline-block_test {
+    display: inline-block;      
+}
+
+
+/******コース******/
+
+.text__bound {
+    animation: key .3s ease infinite alternate;
+  }
+  @keyframes key {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-10px);}
+  }
+
+
+.cource-text {
+    font-family: "Sawarabi Mincho";;
+}
+
+.cource-text1 {
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 24px;
+    margin: 64px 0 24px;
+}
+
+.cource-text2 {
+    font-size: 18px;
+    margin: 0 0 32px;
+}
+
+.cource-text3 {
+    font-size: 18px;
+}
+
+.cource-text4 {
+    font-size: 18px;
+    margin: 0 0 64px;
+}
+
+.cource-images {
+    display: flex;
+
+}
+
+.cource1-1 {
+    font-family: "Sawarabi Mincho";
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding: 149px 114px 148px 48px;
+    width: 750px;
+    height: 478px;
+}
+
+.cource1-2 {
+    margin: 0 0 40px;
+}
+
+.cource2-1 {
+    font-family: "Sawarabi Mincho";
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding: 149px 114px 148px 48px;
+    width: 750px;
+    height: 478px;
+}
+
+.cource2-2 {
+    margin: 0 0 40px;
+}
+
+.cource3-1 {
+    font-family: "Sawarabi Mincho";
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding: 149px 114px 148px 48px;
+    width: 750px;
+    height: 478px;
+}
+
+.cource3-2 {
+    margin: 0 0 40px;
+}
+
+
+/******ニュース******/
+
+.news-heading {
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center;
+    color: #FFD61A;
+    margin: 96px 0 24px 0;
+}
+
+.news-heading2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 64px;
+    font-size: 16px;
+}
+
+.news-paragraph {
+    font-family: "Sawarabi Mincho";
+    padding: 10px;
+    margin: 24px 0 ;
+}
+
+.news-subtitle {
+    padding-bottom: 16px;
+    margin: 0;
+    text-align: left;
+}
+
+.news-text {
+    margin: 5px;
+}
+
+.news-deta {
+    font-size: 14px;
+    color: #999999;
+    margin: 16px;
+}
+
+.news-inner {
+    width: 1140px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 33.333%;
+}
+
+.news-button {
+    background-color: #FFD61A;
+    color: #FFFFFF;
+    width: 264px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.news-button:hover {
+    background-color: yellow;
+  }
+
+
+/******アクセス******/
+
+.access {
+    background-color: #FAFAFA;
+    padding-top: 65px;
+    width: 1450px;
+    height: 950px;
+}
+
+.access_head1 {
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin: 65px 0 24px;
+}
+
+.access_head2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 40px;
+}
+
+.access-paragraph {
+    font-family: "Sawarabi Mincho";
+    margin: 64px 0 79px 0;
+}
+
+.access-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.access-1{
+    width: 152px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.access-2{
+    margin: 15px 0 0 25px;
+    width: 400px;
+    color: #707070;
+}
+
+
+
+
+
+/******コンタクト******/
+
+.form-wrapper {
+    width: 1450px;
+}
+
+
+.contact-header {
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    
+}
+
+.contact__title {
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 65px 0 24px 0px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.contact-title {
+    margin: 0 0 48px 0;
+}
+
+.contact-text2 {
+    margin: 0 0 64px 0;
+}
+
+.contact-text4 {
+    margin: 0 0 64px 0;
+}
+
+.form-wrapper {
+    width: 800px;
+    margin: auto;
+}   
+
+.form {
+    
+}
+
+.form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 40px;
+    padding-right: 200px;
+}
+
+.form-title {
+    width: 152px;
+    margin: 0 24px 0 0;
+    padding: 8px 0 0 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-item {
+    width: 400px;
+    margin: 0 0 24px;
+}
+
+.detail-text {
+    width: 388px;
+    height: 200px;
+}
+
+.radio {
+    margin: 0;
+    padding: 0;
+}
+
+.radio-option {
+    margin: 0 0 24px 0;
+}
+
+.form-title.check-radio {
+    padding: 0;
+}
+
+.form-parts {
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid 1px #AAAAAA;
+    font-size: 1.6rem;
+}
+
+input[type*="radio"] {
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    vertical-align: -2px;
+    background-color: #EEEEEE;
+}
+
+input[type*="radio"]:checked {
+    background-color: aqua;
+}
+
+.submit {
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    border: none;
+}
+
+.form-button {
+    background-color: #FFD61A;
+    color: #FFFFFF;
+    width: 264px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-button:hover {
+    background-color: yellow;
+  }
+
+/******フッター******/
+
+.footer {
+    text-align: center;
+    margin: 120px 0 0 0;
+    padding: 33px 0;
+    background-color: #707070;
+}
+
+.copyrights {
+    color: #FFFFFF;
+}
+
